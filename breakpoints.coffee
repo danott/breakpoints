@@ -226,7 +226,6 @@ class window.Breakpoints
   # Returns nothing significant.
   runCallbacks = (breakpoint, direction) ->
     if validBreakpointDefinition(new BreakpointDefinition(breakpoint))
-      console.log "Breakpoints: #{direction} #{breakpoint}"
       callback.call() for callback in callbacks[breakpoint][direction]
 
 

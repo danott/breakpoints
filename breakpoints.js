@@ -128,7 +128,6 @@ MIT License.
     runCallbacks = function(breakpoint, direction) {
       var callback, _i, _len, _ref, _results;
       if (validBreakpointDefinition(new BreakpointDefinition(breakpoint))) {
-        console.log("Breakpoints: " + direction + " " + breakpoint);
         _ref = callbacks[breakpoint][direction];
         _results = [];
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
