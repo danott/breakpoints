@@ -1,0 +1,10 @@
+body:after {
+  content: "";
+  display: none;
+}
+
+@mixin breakpoint($name) {
+  body:after {
+    content: $name;
+  }
+}
