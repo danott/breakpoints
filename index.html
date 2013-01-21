@@ -65,25 +65,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="https://raw.github.com/danott/breakpoints/master/breakpoints.js"></script>
     <script>
-      var log, enterMobile, exitMobile, enterTablet, exitTablet, enterDesktop, exitDesktop, breakpoints, logElement;
+      jQuery(function(){
+        var log, enterMobile, exitMobile, enterTablet, exitTablet, enterDesktop, exitDesktop, breakpoints, logElement;
 
-      logElement = jQuery("#log");
-      log = function(message){
-        logElement.append("<li>" + message + "</li>");
-      }
+        logElement = jQuery("#log");
+        log = function(message){
+          logElement.append("<li>" + message + "</li>");
+        }
 
-      enterMobile  = function(){ log("Enter mobile"); }
-      exitMobile   = function(){ log("Exit mobile"); }
-      enterTablet  = function(){ log("Enter tablet"); }
-      exitTablet   = function(){ log("Exit tablet"); }
-      enterDesktop = function(){ log("Enter desktop"); }
-      exitDesktop  = function(){ log("Exit desktop"); }
+        enterMobile  = function(){ log("Enter mobile"); }
+        exitMobile   = function(){ log("Exit mobile"); }
+        enterTablet  = function(){ log("Enter tablet"); }
+        exitTablet   = function(){ log("Exit tablet"); }
+        enterDesktop = function(){ log("Enter desktop"); }
+        exitDesktop  = function(){ log("Exit desktop"); }
 
-      breakpoints = new Breakpoints([
-          {name: "mobile", enter: enterMobile, exit: exitMobile},
-          {name: "tablet", enter: enterTablet, exit: exitTablet},
-          {name: "desktop", enter: enterDesktop, exit: exitDesktop}
-      ]);
+        breakpoints = new Breakpoints([
+            {name: "mobile", enter: enterMobile, exit: exitMobile},
+            {name: "tablet", enter: enterTablet, exit: exitTablet},
+            {name: "desktop", enter: enterDesktop, exit: exitDesktop}
+        ]);
+      });
     </script>
 
   </body>
