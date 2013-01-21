@@ -24,7 +24,7 @@ Step one, define named breakpoints in CSS. Named breakpoints take the form:
 }
 
 @media screen and (min-width:980px) {
-  body: after {
+  body:after {
     content: "desktop";
     display: none;
   }
