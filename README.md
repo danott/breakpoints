@@ -3,7 +3,7 @@ breakpoints
 
 Unify responsive presentation and behavior by utilizing named breakpoints across CSS and JavaScript.
 
-See the [demo](https://danott.github.com/breakpoints).
+See the [demo](http://danott.github.com/breakpoints).
 Usage
 -----
 
