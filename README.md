@@ -72,3 +72,21 @@ By default, Breakpoints adds event listeners and aggressively learns breakpoints
 breakpoints = new Breakpoints(null, false) // Initialize breakpoints without setting up event listeners.
 ```
 
+SASS
+----
+
+A sass mixin is provided to ease naming breakpoints. Using this mixin, you can define breakpoints as simply as:
+
+```scss
+@media screen and (max-width: 767px) {
+  @include breakpoint("mobile");
+}
+
+@media screen and (min-width: 768px) and (max-width:979px) {
+  @include breakpoint("tablet");
+}
+
+@media screen and (min-width:980px) {
+  @include breakpoint("desktop");
+}
+```
