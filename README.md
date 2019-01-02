@@ -1,4 +1,4 @@
-breakpoints
+breakpoints (UNMAINTAINED EXPERIMENT. Use at your own risk)
 ===========
 
 Unify responsive presentation and behavior by utilizing named breakpoints across CSS and JavaScript.
